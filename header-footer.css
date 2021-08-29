@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'FrontFont';
+    src: url('fonts/Roboto/Roboto-Thin.ttf'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Roboto/Roboto-Thin.ttf') format('truetype'), /* Super Modern Browsers */
+         
+         url('fonts/Roboto/Roboto-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         
+  }
+
+
+  
+  @font-face {
+    font-family: 'FrontFont-2';
+    src: url('fonts/Roboto/Roboto-Light.ttf'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Roboto/Roboto-Light.ttf') format('truetype'), /* Super Modern Browsers */
+         
+         url('fonts/Roboto/Roboto-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         
+  }
+
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'FrontFont-2';
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+nav img{
+   
+    height: 100px;
+    
+}
+
+nav div{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'FrontFont-2';
+}
+
+/* navigation ends here */
+
+
+/* footer*/
+
+
+
+footer{
+    margin-top: 300px;
+    font-size: 20px;
+    font-family: 'FrontFont-2';
+    background-color: #031121;
+    color: white;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+align-items: end;
+}
+
+
+.logo{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 1;
+    grid-row-start: 2;      
+    
+
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+
+    height: 100px;
+}
+
+.address{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 1;
+    grid-row-start: 2;   
+    align-items: flex-end  ;
+    
+}
+
+.year{
+
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 2;
+    grid-row-start: 3;   
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    font-size: 10px;
+
+}
+
+
+.address h3{
+    
+   padding-bottom: 40px;
+}
+
+.address h4{
+font-size: 13px;
+}
